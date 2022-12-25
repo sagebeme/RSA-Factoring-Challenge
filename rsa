@@ -4,13 +4,13 @@ import math
 """gets the first two factors of any number"""
 
 
-def is_prime(num):
+def is_prime(checkprime):
     """checks if a number is prime"""
     i = 3
-    if num % 2 == 0:
+    if checkprime % 2 == 0:
         return False
-    while i * i <= num:
-        if num % i == 0:
+    while i * i <= checkprime:
+        if checkprime % i == 0:
             return False
         i += 2
     return True
